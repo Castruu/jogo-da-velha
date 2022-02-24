@@ -49,13 +49,9 @@ function verify() {
             if (!backgroundColor) continue;
             colors.push(backgroundColor);
         }
-        console.log(colors);
-        console.log(arr);
         for (color in colors) {
             if (color == 0) continue;
-            console.log(color)
             if (colors[color] == colors[color - 1]) {
-                console.log(colors[color], colors[color - 1]);
                 if (color == 2) {
                     alert(`O jogador ${colors[color]} ganhou!`);
                     gameOver = true;
