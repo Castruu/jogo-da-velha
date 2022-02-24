@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+}
+
+#container {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.box {
+    width: 30vw;
+    margin: 5px;
+    border: 1px solid black;
+    background-color:bisque;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    #container {
+        width: 50%;
+        height: 50vh;
+    }
+
+    .box {
+        width: 30%;
+    }
+    
+}
+
+
