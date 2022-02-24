@@ -1,6 +1,10 @@
 let index = 0;
+let gameOver = false;
 
 let boxes = document.querySelectorAll(".box");
+let restartButton = document.getElementById("restart");
+
+restartButton.onclick = () => document.location.reload();
 
 let winning = [
     [
@@ -53,12 +57,11 @@ function verify() {
             if (colors[color] == colors[color - 1]) {
                 console.log(colors[color], colors[color - 1]);
                 if (color == 2) {
-                    alert("Won");
-                    document.location.reload();
+                    alert(`O jogador ${colors[color]} ganhou!`);
+                    gameOver = true;
                     return;
                 }
             } else {
-                console.log("bla");
                 break;
             }
         }
@@ -66,6 +69,7 @@ function verify() {
 }
 
 function draw() {
+    if(gameOver) return;
     if (this.style.backgroundColor) {
         return;
     }

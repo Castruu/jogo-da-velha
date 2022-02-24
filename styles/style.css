@@ -18,6 +18,17 @@ body {
     cursor: pointer;
 }
 
+#restart {
+    background-color: purple;
+    color: white;
+    border: 1px solid black;
+    margin-top: 50px;
+    height: 10vh;
+    width: 90%;
+    font-size: 30px;
+    border-radius: 12px;
+}
+
 
 @media screen and (min-width: 768px) {
     #container {
@@ -28,7 +39,13 @@ body {
     .box {
         width: 30%;
     }
+
+    #restart {
+        width: 20%;
+    }
     
 }
+
+
 
 
