@@ -53,8 +53,11 @@ function verify() {
             if (color == 0) continue;
             if (colors[color] == colors[color - 1]) {
                 if (color == 2) {
+                    setTimeout(() => {
                     alert(`O jogador ${colors[color]} ganhou!`);
                     gameOver = true;
+                    }, 10);
+
                     return;
                 }
             } else {
